@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added machine readable relation qualifiers to `identifiers` using terminology from DataCite v4.4; PR [#459](https://github.com/citation-file-format/citation-file-format/pull/459).
 - Added `contributors` field. Issue [#66](https://github.com/citation-file-format/citation-file-format/issues/66), [#84](https://github.com/citation-file-format/citation-file-format/issues/84); PR [#439](https://github.com/citation-file-format/citation-file-format/pull/439).
 - Loosen requirement of authors in references to allow for any of authors and/or editors. Issue [#334](https://github.com/citation-file-format/citation-file-format/issues/334); PR [#524](https://github.com/citation-file-format/citation-file-format/pull/524)
-
+- Added `funding` field. Issue [#491](https://github.com/citation-file-format/citation-file-format/issues/491); PR [#549](https://github.com/citation-file-format/citation-file-format/pull/549).
 
 ### Changed
 
