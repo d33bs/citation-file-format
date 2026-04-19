@@ -402,9 +402,8 @@
             "description": "Funding information for the work.",
             "properties": {
                 "funder": {
-                    "description": "The funder of the grant.",
-                    "format": "uri",
-                    "type": "string"
+                    "$ref": "#/$defs/ror",
+                    "description": "The funder of the grant."
                 },
                 "grant": {
                     "description": "The grant identifier.",
@@ -413,6 +412,7 @@
                 }
             },
             "required": [
+                "funder",
                 "grant"
             ],
             "type": "object"

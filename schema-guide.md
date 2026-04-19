@@ -1259,26 +1259,13 @@ authors:
 - **usage**:<br><br>
     ```yaml
     funding:
-      # String-based, encoded in only the required field     
-      - grant: "DFG grant 1234567"
-
-      # Ambiguous, as not specifying funding agency anyhow, but possible
-      - grant: "1234567"
-
-      # String-based, using both fields
-      - funder: "DFG" 
+      # Minimal valid funding entry
+      - funder: "https://ror.org/04bwf3e34"
         grant: "1234567"
 
-      # URI-based, encoded in only the required field
-      - grant: "https://doi.org/10.1234/dfg::1234567"
-
-      # URI+string-based
-      - funder: "https://doi.org/10.1234/dfg"  
-        grant: "1234567"
-
-      # Fully URI-based, if duplicating information
-      - funder: "https://doi.org/10.1234/dfg"  
-        grant: "https://doi.org/10.1234/dfg::1234567"
+      # Funding entry with richer grant string
+      - funder: "https://ror.org/00rbjv475"
+        grant: "DFG grant 1234567"
     ```
 
 ### `$defs.identifier`
