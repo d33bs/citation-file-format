@@ -1262,7 +1262,7 @@ authors:
       # String-based, encoded in only the required field     
       - grant: "DFG grant 1234567"
 
-      # Lossy, but possible
+      # Ambiguous, as not specifying funding agency anyhow, but possible
       - grant: "1234567"
 
       # String-based, using both fields
