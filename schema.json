@@ -402,8 +402,15 @@
             "description": "Funding information for the work.",
             "properties": {
                 "funder": {
-                    "$ref": "#/$defs/ror",
-                    "description": "The funder of the grant."
+                    "description": "The funder of the grant. Use a ROR URI whenever available; otherwise use a non-empty funder name.",
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ror"
+                        },
+                        {
+                            "$ref": "#/$defs/strictish-string"
+                        }
+                    ]
                 },
                 "grant": {
                     "description": "The grant identifier.",

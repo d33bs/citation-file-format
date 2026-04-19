@@ -1259,11 +1259,15 @@ authors:
 - **usage**:<br><br>
     ```yaml
     funding:
-      # Minimal valid funding entry
+      # Preferred form: ROR URI + grant
       - funder: "https://ror.org/04bwf3e34"
         grant: "1234567"
 
-      # Funding entry with richer grant string
+      # Fallback form when no ROR exists: funder name + grant
+      - funder: "Example Community Foundation"
+        grant: "ABC-2026-42"
+
+      # Also valid: richer grant string
       - funder: "https://ror.org/00rbjv475"
         grant: "DFG grant 1234567"
     ```
